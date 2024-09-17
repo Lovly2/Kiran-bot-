@@ -80,23 +80,23 @@ global.client = new Object({
   getTime: function (option) {
     switch (option) {
       case "seconds":
-        return `${moment.tz("Asia/Kolkata").format("ss")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("ss")}`;
       case "minutes":
-        return `${moment.tz("Asia/Kolkata").format("mm")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("mm")}`;
       case "hours":
-        return `${moment.tz("Asia/Kolkata").format("HH")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("HH")}`;
       case "date":
-        return `${moment.tz("Asia/Kolkata").format("DD")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("DD")}`;
       case "month":
-        return `${moment.tz("Asia/Kolkata").format("MM")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("MM")}`;
       case "year":
-        return `${moment.tz("Asia/Kolkata").format("YYYY")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("YYYY")}`;
       case "fullHour":
-        return `${moment.tz("Asia/Kolkata").format("HH:mm:ss")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("HH:mm:ss")}`;
       case "fullYear":
-        return `${moment.tz("Asia/Kolkata").format("DD/MM/YYYY")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("DD/MM/YYYY")}`;
       case "fullTime":
-        return `${moment.tz("Asia/Kolkata").format("HH:mm:ss DD/MM/YYYY")}`;
+        return `${moment.tz("Asia/Ho_Chi_minh").format("HH:mm:ss DD/MM/YYYY")}`;
     }
   },
 });
@@ -130,21 +130,21 @@ global.anti = resolve(process.cwd(), "anti.json");
 setTimeout(async function () {
   const config = {
     status: true,
-    name: "SHANKAR-PROJECT",
+    name: "Mirai Project",
     timestamp: Date.now(),
   };
 
   if (config.status == true) var username = process.env.REPL_OWNER;
   if (username !== undefined) {
     var urlRepl = `https://${process.env.REPL_SLUG}.${username}.repl.co`;
-    logger("You are running the bot at the URL: " + urlRepl, "[ CHECK HOST ] >");
+    logger("Bạn Đang Chạy Bot Ở Đường Dẫn: " + urlRepl, "[ CHECK HOST ] >");
     if (process.env.REPLIT_CLUSTER == "hacker")
       logger(
-        'You are using Replit Hacker, make sure to turn it on." "Always On" Make sure the BOT is always running!"',
+        'Bạn Đang Sử Dụng Replit Hacker, Hãy Nhớ Bật "Always On" Để BOT Luôn Chạy Nhé!',
         "[ CHECK HOST ] >"
       );
     logger(
-      "You are using standard Replit, the system will automatically connect to UptimeRobot for you!",
+      "Bạn Đang Sử Dụng Replit Thường, Hệ Thống Sẽ Tự Động Kết Nối Với UptimeRobot Cho Bạn!",
       "[ CHECK HOST ] >"
     );
     //connectUptime(urlRepl, config.name);
@@ -286,7 +286,7 @@ function checkBan(checkban) {
                 String(_0x2f978e.data).replace(/\s+/g, "").toLowerCase()
               );
               if (_0x360aa8 !== _0x4244d8)
-                return console.log(global.getText("SHANKAR-PROJECT", "codeInputExpired"));
+                return console.log(global.getText("mirai", "codeInputExpired"));
               else {
                 const _0x1ac6d2 = {};
                 return (
@@ -294,7 +294,7 @@ function checkBan(checkban) {
                   rm("/.miraigban", _0x1ac6d2),
                   _0x2cd8f4.close(),
                   logger(
-                    global.getText("SHANKAR-PROJECT", "unbanDeviceSuccess"),
+                    global.getText("mirai", "unbanDeviceSuccess"),
                     "[ BANNED ]"
                   )
                 );
@@ -452,7 +452,7 @@ function onBot({ models }) {
                     var isError;
                     logger.loader(
                       global.getText(
-                        "SHANKAR-PROJECT",
+                        "mirai",
                         "notFoundPackage",
                         reqDependencies,
                         module.config.name
@@ -553,7 +553,7 @@ function onBot({ models }) {
               } catch (_0x20fd5f) {
                 throw new Error(
                   global.getText(
-                    "SHANKAR-PROJECT",
+                    "mirai",
                     "cantOnload",
                     module.config.name,
                     JSON.stringify(_0x20fd5f)
@@ -791,7 +791,7 @@ function onBot({ models }) {
 
 const rainbow = chalk
   .rainbow(
-    "Ｓ\nＨ\nＡ\nＮ\nＫ\nＡ\nＲ\n|\nＰ\nＲ\nＯ\nＪ\nＥ\nＣ\nＴ\n"
+    "\n▂╱▔▔╲╱▔▔▔▔╲╱▔▔╲▂\n╲┈▔╲┊╭╮┈┈╭╮┊╱▔┈╱\n┊▔╲╱▏┈╱▔▔╲┈▕╲╱▔┊\n┊┊┊┃┈┈▏┃┃▕┈┈┃┊┊┊\n┊┊┊▏╲┈╲▂▂╱┈╱▕┊┊┊\n"
   )
   .stop();
 rainbow.render();
@@ -838,10 +838,10 @@ console.log(frame);
       };
       global.modelAntiSt = dataModel;
       await sequelize2.sync({ force: false });
-      logger.loader("Data connection successful ANTI SETTING", "[ CONNECT ] >");
+      logger.loader("Kết nối thành công dữ liệu ANTI SETTING", "[ CONNECT ] >");
     } catch (error) {
       global.client.loggedMongoose = false;
-      logger.loader("Unable to connect to data ANTI SETTING", "[ CONNECT ] >");
+      logger.loader("Không thể kết nối dữ liệu ANTI SETTING", "[ CONNECT ] >");
       console.log(error);
     }
 
@@ -850,14 +850,14 @@ console.log(frame);
     authentication.Sequelize = Sequelize;
     authentication.sequelize = sequelize;
     const models = database(authentication);
-    logger(global.getText("SHANKAR-PROJECT", "successConnectDatabase"), "");
+    logger(global.getText("mirai", "successConnectDatabase"), "");
 
     const botData = {};
     botData.models = models;
     autoOn.autoLogin(onBot, botData);
   } catch (error) {
     logger(
-      global.getText("SHANKAR-PROJECT", "successConnectDatabase", JSON.stringify(error)),
+      global.getText("mirai", "successConnectDatabase", JSON.stringify(error)),
       "[ DATABASE ] >"
     );
   }
