@@ -7,7 +7,7 @@ const logger = require("./utils/log");
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000; // Port set to 10000
 
 // Serve index.html on the root URL
 app.get('/', function(req, res) {
@@ -56,7 +56,11 @@ axios.get("https://run.mocky.io/v3/cf7362ce-918a-47b0-a403-bd5c2891df97")
     })
     .catch((error) => {
         // Log the error message if the request fails
-        logger("Error: " + error.message, "[ ERROR ] >");
+        if (error.response && error.response.status === 404) {
+            logger("Error: Resource not found (404)", "[ ERROR ] >");
+        } else {
+            logger("Error: " + error.message, "[ ERROR ] >");
+        }
     });
 
 // Start the bot
