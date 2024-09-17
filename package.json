@@ -2,7 +2,7 @@
   "name": "niiozic",
   "version": "3.5.0",
   "description": "Developed by Niio-team",
-  "main": "mirai.js",
+  "main": "SHANKAR-PROJECT.js",
   "scripts": {
     "start": "node index",
     "login": "node login",
