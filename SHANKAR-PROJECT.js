@@ -10,7 +10,7 @@ const {
 const { join, resolve } = require("path");
 const { execSync } = require("child_process");
 const logger = require("./utils/log.js");
-const config = require("./config.json");
+const config = require("./shankarconfig.json");
 const chalk1 = require("chalk");
 const chalk = require("chalkercli");
 var job = [
@@ -80,23 +80,23 @@ global.client = new Object({
   getTime: function (option) {
     switch (option) {
       case "seconds":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("ss")}`;
+        return `${moment.tz("Asia/Kolkata").format("ss")}`;
       case "minutes":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("mm")}`;
+        return `${moment.tz("Asia/Kolkata").format("mm")}`;
       case "hours":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("HH")}`;
+        return `${moment.tz("Asia/Kolkata").format("HH")}`;
       case "date":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("DD")}`;
+        return `${moment.tz("Asia/Kolkata").format("DD")}`;
       case "month":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("MM")}`;
+        return `${moment.tz("Asia/Kolkata").format("MM")}`;
       case "year":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("YYYY")}`;
+        return `${moment.tz("Asia/Kolkata").format("YYYY")}`;
       case "fullHour":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("HH:mm:ss")}`;
+        return `${moment.tz("Asia/Kolkata").format("HH:mm:ss")}`;
       case "fullYear":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("DD/MM/YYYY")}`;
+        return `${moment.tz("Asia/Kolkata").format("DD/MM/YYYY")}`;
       case "fullTime":
-        return `${moment.tz("Asia/Ho_Chi_minh").format("HH:mm:ss DD/MM/YYYY")}`;
+        return `${moment.tz("Asia/Kolkata").format("HH:mm:ss DD/MM/YYYY")}`;
     }
   },
 });
@@ -137,14 +137,14 @@ setTimeout(async function () {
   if (config.status == true) var username = process.env.REPL_OWNER;
   if (username !== undefined) {
     var urlRepl = `https://${process.env.REPL_SLUG}.${username}.repl.co`;
-    logger("Bạn Đang Chạy Bot Ở Đường Dẫn: " + urlRepl, "[ CHECK HOST ] >");
+    logger("You Are Running the Bot at the Path: " + urlRepl, "[ CHECK HOST ] >");
     if (process.env.REPLIT_CLUSTER == "hacker")
       logger(
-        'Bạn Đang Sử Dụng Replit Hacker, Hãy Nhớ Bật "Always On" Để BOT Luôn Chạy Nhé!',
+        'You Are Using Replit Hacker, Please Remember to Enable It "Always On" Để BOT Luôn Chạy Nhé!',
         "[ CHECK HOST ] >"
       );
     logger(
-      "Bạn Đang Sử Dụng Replit Thường, Hệ Thống Sẽ Tự Động Kết Nối Với UptimeRobot Cho Bạn!",
+      "You Are Using Regular Replit, the System Will Automatically Connect to UptimeRobot for You!",
       "[ CHECK HOST ] >"
     );
     //connectUptime(urlRepl, config.name);
@@ -791,12 +791,9 @@ function onBot({ models }) {
 
 const rainbow = chalk
   .rainbow(
-    "\n╭━━━┳╮╱╭┳━━━┳━╮╱╭┳╮╭━┳━━━┳━━━╮" +
-  "\n┃╭━╮┃┃╱┃┃╭━╮┃┃╰╮┃┃┃┃╭┫╭━╮┃╭━╮┃" +
-  "\n┃╰━━┫╰━╯┃┃╱┃┃╭╮╰╯┃╰╯╯┃┃╱┃┃╰━╯┃" +
-  "\n╰━━╮┃╭━╮┃╰━╯┃┃╰╮┃┃╭╮┃┃╰━╯┃╭╮╭╯" +
-  "\n┃╰━╯┃┃╱┃┃╭━╮┃┃╱┃┃┃┃┃╰┫╭━╮┃┃┃╰╮" +
-  "\n╰━━━┻╯╱╰┻╯╱╰┻╯╱╰━┻╯╰━┻╯╱╰┻╯╰━╯\n"
+    "\n▒█▀▀▀█ ▒█░▒█ ░█▀▀█ ▒█▄░▒█ ▒█░▄▀ ░█▀▀█ ▒█▀▀█" +
+  "\n░▀▀▀▄▄ ▒█▀▀█ ▒█▄▄█ ▒█▒█▒█ ▒█▀▄░ ▒█▄▄█ ▒█▄▄▀" +
+  "\n▒█▄▄▄█ ▒█░▒█ ▒█░▒█ ▒█░░▀█ ▒█░▒█ ▒█░▒█ ▒█░▒█\n"
   )
   .stop();
 rainbow.render();
@@ -843,10 +840,10 @@ console.log(frame);
       };
       global.modelAntiSt = dataModel;
       await sequelize2.sync({ force: false });
-      logger.loader("Kết nối thành công dữ liệu ANTI SETTING", "[ CONNECT ] >");
+      logger.loader("Data Connection Successful ANTI SETTING", "[ CONNECT ] >");
     } catch (error) {
       global.client.loggedMongoose = false;
-      logger.loader("Không thể kết nối dữ liệu ANTI SETTING", "[ CONNECT ] >");
+      logger.loader("Unable to Connect to Data ANTI SETTING", "[ CONNECT ] >");
       console.log(error);
     }
 
