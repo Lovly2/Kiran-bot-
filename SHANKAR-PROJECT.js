@@ -10,7 +10,7 @@ const {
 const { join, resolve } = require("path");
 const { execSync } = require("child_process");
 const logger = require("./utils/log.js");
-const config = require("./shankarconfig.json");
+const config = require("./config.json");
 const chalk1 = require("chalk");
 const chalk = require("chalkercli");
 var job = [
