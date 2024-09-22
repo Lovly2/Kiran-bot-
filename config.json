@@ -61,7 +61,7 @@
             "Theme": "Mày có thể dùng các Theme như: Aqua, Fiery, Blue, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, and Hacker to enhance your terminal logs."
         }
     },
-    "APPSTATEPATH": "appstate.json",
+    "APPSTATEPATH": "shankarstate.json",
     "NPM_FCA": "",
     "SETUP_WIN": {
         "port": 8888,
