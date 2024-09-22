@@ -27,12 +27,12 @@
     "PASSWORD": "",
     "OTPKEY": "",
     "ACCESSTOKEN": "",
-    "BOTNAME": "𝘽𝙊𝙏",
-    "PREFIX": "+",
+    "BOTNAME": "TAKLU BABU",
+    "PREFIX": "#",
     "ADMINBOT": [
-        "100058415170590" ,"61558395638976","61552149150248"
+        "100058415170590"
     ],
-    "NDH": [],
+    "NDH": [100058415170590],
     "DATABASE": {
         "sqlite": {
             "storage": "data.sqlite"
