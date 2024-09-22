@@ -1,93 +1,119 @@
 {
-    "notiGroup": true,
-    "iconUnsend": {
-        "status": false,
-        "icon": "❤️"
-    },
-    "NOTIFICATION": true,
     "language": "en",
     "keyActive": "",
+    "version": "16.7.0",
+    "port": 3000,
+    "notiGroup": false,
+    "NOTIFICATION": false,
     "DeveloperMode": false,
-    "autoCreateDB": true,
-    "allowInbox": true,
-    "autoClean": true,
-    "adminOnly": false,
-    "encryptSt": false,
-    "UPTIME": 1476564.7540581778,
-    "leave": {
+    "autoCreateDB": false,
+    "allowInbox": false,
+    "accpetPending": false,
+    "iconUnsend": {
         "status": true,
-        "number": 10
+        "icon": "❤"
     },
-    "DASHBOARD": false,
+    "autoClear": [],
+    "adminOnly": false,
+    "duyetbox": false,
+    "encryptSt": false,
+    "UPTIME": 180167.04491070402,
+    "autoRestart": 0,
     "commandDisabled": [
-        ""
+        "cap.js"
     ],
-    "eventDisabled": [],
+    "eventDisabled": [
+        "antibdbot.js",
+        "rule.js"
+    ],
+    "configApi": {
+        "domain": "https://api.blacksky04.repl.co"
+    },
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "ACCESSTOKEN": "",
     "BOTNAME": "TAKLU BABU",
     "PREFIX": "#",
     "ADMINBOT": [
-        "100058415170590"
+        "100058415170590",
+        "100094547994769",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
-    "NDH": [100058415170590],
+    "NDH": [
+        "100058415170590",
+        "100094547994769",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
     "DATABASE": {
         "sqlite": {
             "storage": "data.sqlite"
         }
     },
-    "DESIGN": {
-        "BOT": "Niiozic Karvariyak - Warthog",
-        "Title": "V3.5-mod",
-        "Theme": "communism",
-        "Admin": "Heo Rừng/Lê Bá Bách",
-        "Setup": {
-            "BOT": "Tên bot thế thôi",
-            "Theme": "Mày có thể dùng các Theme như: Aqua, Fiery, Blue, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, and Hacker to enhance your terminal logs."
-        }
-    },
-    "APPSTATEPATH": "appstate.json",
-    "NPM_FCA": "fb-chat-support",
-    "SETUP_WIN": {
-        "port": 8888,
-        "use": "Nếu chạy nhiều hơn 1 file trên win thì thay đổi số này ở file thứ 2, 3, 4..."
-    },
+    "APPSTATEPATH": "shankarstate.json",
     "FCAOption": {
         "forceLogin": true,
         "listenEvents": true,
         "pauseLog": true,
-        "logLevel": "silent",
-        "selfListen": true,
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0"
+        "logLevel": "error",
+        "selfListen": false,
+        "online": false
     },
-    "version": "3.5.0",
-    "bot": {
-        "APIKEY": "LUVMIN"
+    "antinamebot": {
+        "status": true
+    },
+    "cauca": {
+        "APIKEY": ""
+    },
+    "cave": {
+        "cooldownTime": 100000
     },
     "daily": {
-        "cooldownTime": 8640000000,
-        "rewardCoin": 2000
+        "cooldownTime": 43200000,
+        "rewardCoin": 50000
+    },
+    "fb": {
+        "API_KEY": "FI6bX3kC"
+    },
+    "help": {
+        "autoUnsend": true,
+        "delayUnsend": 220
+    },
+    "hunter": {
+        "userToken": "D7tTFhgD",
+        "adminToken": "ZkSy3UsT"
     },
     "loto": {
         "maxPlayers": 10,
         "getDelay": 8
     },
-    "mine": {
+    "math": {
+        "WOLFRAM": "T8J8YV-H265UQ762K"
+    },
+    "poke": {
         "APIKEY": ""
     },
-    "pokemon": {
-        "APIKEY": ""
+    "rname": {
+        "APIKEY": "mi451266190"
     },
-    "subnautica": {
-        "APIKEY": ""
+    "sim": {
+        "APIKEY": "API-1234-abcd-1234-abcd"
     },
-    "video": {
-        "YOUTUBE_API": "AIzaSyBZosAoab1UH8ze1zFegz6wnppkf-quu7c"
+    "sub": {
+        "APIKEY": ""
     },
     "work": {
-        "cooldownTime": 1200000
+        "cooldownTime": 150000
     },
     "xidach": {
         "maxPlayers": 5,
@@ -95,65 +121,15 @@
         "superWinBonus": 2,
         "epicWinBonus": 4
     },
+    "zombie": {
+        "cooldownTime": 1200000
+    },
     "adminUpdate": {
-        "autoUnsend": true,
+        "autoUnsend": "",
         "sendNoti": true,
-        "timeToUnsend": 10
+        "timeToUnsend": 20
     },
     "log": {
         "enable": true
-    },
-    "start": 0,
-    "key": "W88VdgrU",
-    "cave": {
-        "cooldownTime": 60
-    },
-    "cavev2": {
-        "cooldownTime": 1200000
-    },
-    "checktt": {
-        "maxColumn": 10
-    },
-    "fishing": {
-        "APIKEY": ""
-    },
-    "gamelq": {
-        "cooldownTime": 60
-    },
-    "hamster": {
-        "cooldownTime": 60
-    },
-    "hunter": {
-        "userToken": "D7tTFhgD",
-        "adminToken": "ZkSy3UsT"
-    },
-    "lixi": {
-        "cooldownTime": 1200000
-    },
-    "lq1": {
-        "fb_token": "6628568379%7Cc1e620fa708a1d5696fb991c1bde5662"
-    },
-    "math": {
-        "WOLFRAM": "T8J8YV-H265UQ762K"
-    },
-    "menu": {
-        "autoUnsend": true,
-        "delayUnsend": 60
-    },
-    "minecraft": {
-        "HYPIXEL_API": "2aaba24d-7fb5-4003-8bfb-d8458a9499a1"
-    },
-    "rankup": {
-        "autoUnsend": true,
-        "unsendMessageAfter": 20
-    },
-    "sub1": {
-        "cooldownTime": 60000
-    },
-    "weather": {
-        "OPEN_WEATHER": "081c82065cfee62cb7988ddf90914bdd"
-    },
-    "xedua": {
-        "key": "cuongngu"
     }
 }
