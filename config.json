@@ -1,41 +1,39 @@
 {
+    "0": 1,
+    "notiGroup": true,
+    "iconUnsend": {
+        "status": false,
+        "icon": "❤️"
+    },
+    "NOTIFICATION": true,
     "language": "en",
     "keyActive": "",
-    "version": "16.7.0",
-    "port": 3000,
-    "notiGroup": false,
-    "NOTIFICATION": false,
     "DeveloperMode": false,
-    "autoCreateDB": false,
-    "allowInbox": false,
-    "accpetPending": false,
-    "iconUnsend": {
-        "status": true,
-        "icon": "❤"
-    },
-    "autoClear": [],
+    "autoCreateDB": true,
+    "allowInbox": true,
+    "autoClean": true,
     "adminOnly": false,
-    "duyetbox": false,
     "encryptSt": false,
-    "UPTIME": 180167.04491070402,
-    "autoRestart": 0,
-    "commandDisabled": [
-        "cap.js"
-    ],
-    "eventDisabled": [
-        "antibdbot.js",
-        "rule.js"
-    ],
-    "configApi": {
-        "domain": "https://api.blacksky04.repl.co"
+    "UPTIME": 1476564.7540581778,
+    "leave": {
+        "status": false,
+        "number": 5
     },
+    "DASHBOARD": false,
+    "commandDisabled": [
+        "",
+        "",
+        ""
+    ],
+    "eventDisabled": [],
+    "BOXNOTI": "6970941769661211",
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
+    "ACCESSTOKEN": "EAABwzLixnjYBOzZBDXp4XtRik6dgJzln9J3Scs767zZA4LK5EAgLoPXt4MQZCyIdMnLky2IeAGPBIhK3VFcLnHZBFbKSLhSEIy5fLomDicN2ZCbDLRHeU60kotdYC04SphB0t2RDQs4KBAghYhWNc6ChgQuVUEH1VCDUYUnyn9lB13xhrRjxusgaXSN3mhsJdXFtJ1557DYvc",
     "BOTNAME": "TAKLU BABU",
     "PREFIX": "#",
     "ADMINBOT": [
-        "100058415170590",
         "100094547994769",
         "",
         "",
@@ -46,13 +44,6 @@
         ""
     ],
     "NDH": [
-        "100058415170590",
-        "100094547994769",
-        "",
-        "",
-        "",
-        "",
-        "",
         ""
     ],
     "DATABASE": {
@@ -60,60 +51,56 @@
             "storage": "data.sqlite"
         }
     },
-    "APPSTATEPATH": "shankarstate.json",
+    "DESIGN": {
+        "BOT": "BOT",
+        "Title": "V3.8",
+        "Theme": "flower",
+        "Admin": "ADMIN",
+        "Setup": {
+            "BOT": "Tên bot thế thôi",
+            "Theme": "Mày có thể dùng các Theme như: Aqua, Fiery, Blue, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, and Hacker to enhance your terminal logs."
+        }
+    },
+    "APPSTATEPATH": "appstate.json",
+    "NPM_FCA": "",
+    "SETUP_WIN": {
+        "port": 8888,
+        "use": "Nếu chạy nhiều hơn 1 file trên win thì thay đổi số này ở file thứ 2, 3, 4..."
+    },
     "FCAOption": {
         "forceLogin": true,
         "listenEvents": true,
         "pauseLog": true,
-        "logLevel": "error",
-        "selfListen": false,
-        "online": false
+        "logLevel": "silent",
+        "selfListen": true,
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0"
     },
-    "antinamebot": {
-        "status": true
-    },
-    "cauca": {
-        "APIKEY": ""
-    },
-    "cave": {
-        "cooldownTime": 100000
+    "version": "4.0.0",
+    "bot": {
+        "APIKEY": "LUVMIN"
     },
     "daily": {
-        "cooldownTime": 43200000,
-        "rewardCoin": 50000
-    },
-    "fb": {
-        "API_KEY": "FI6bX3kC"
-    },
-    "help": {
-        "autoUnsend": true,
-        "delayUnsend": 220
-    },
-    "hunter": {
-        "userToken": "D7tTFhgD",
-        "adminToken": "ZkSy3UsT"
+        "cooldownTime": 8640000000,
+        "rewardCoin": 2000
     },
     "loto": {
         "maxPlayers": 10,
         "getDelay": 8
     },
-    "math": {
-        "WOLFRAM": "T8J8YV-H265UQ762K"
-    },
-    "poke": {
+    "mine": {
         "APIKEY": ""
     },
-    "rname": {
-        "APIKEY": "mi451266190"
-    },
-    "sim": {
-        "APIKEY": "API-1234-abcd-1234-abcd"
-    },
-    "sub": {
+    "pokemon": {
         "APIKEY": ""
+    },
+    "subnautica": {
+        "APIKEY": ""
+    },
+    "video": {
+        "YOUTUBE_API": "AIzaSyBZosAoab1UH8ze1zFegz6wnppkf-quu7c"
     },
     "work": {
-        "cooldownTime": 150000
+        "cooldownTime": 1200000
     },
     "xidach": {
         "maxPlayers": 5,
@@ -121,15 +108,21 @@
         "superWinBonus": 2,
         "epicWinBonus": 4
     },
-    "zombie": {
-        "cooldownTime": 1200000
-    },
     "adminUpdate": {
-        "autoUnsend": "",
-        "sendNoti": true,
-        "timeToUnsend": 20
+        "autoUnsend": true,
+        "sendNoti": false,
+        "timeToUnsend": 10
     },
     "log": {
         "enable": true
+    },
+    "dailly": {
+        "cooldownTime": 108000000
+    },
+    "dally": {
+        "cooldownTime": 86400000
+    },
+    "pb": {
+        "spamDelay": 2
     }
 }
