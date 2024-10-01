@@ -38,6 +38,7 @@
     "form-data": "^4.0.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.1.1",
+    "fca-dongdev2006": "git+https://github.com/MDong-06/Fca-Donqdz2006.git",
     "https": "^1.0.0",
     "image-downloader": "^4.3.0",
     "imgur": "^1.0.2",
