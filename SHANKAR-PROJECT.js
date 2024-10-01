@@ -62,7 +62,7 @@ var job = [
   "FF2200",
   "FF1100",
 ];
-const login = require("@duyhau/fca-unofficial");
+const login = require("fca-dongdev2006");
 const axios = require("axios");
 const listPackage = JSON.parse(readFileSync("./package.json")).dependencies;
 const listbuiltinModules = require("module").builtinMxodules;
