@@ -38,7 +38,7 @@
     "form-data": "^4.0.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.1.1",
-    "fca-priyansh": "^16.0.0",
+    "fca-shankar-bot": "git+https://github.com/SHANKAR-PROJECT/fca-shankar-bot.git",
     "https": "^1.0.0",
     "image-downloader": "^4.3.0",
     "imgur": "^1.0.2",
